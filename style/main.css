@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600|Source+Code+Pro:600,300&display=swap');
+
+:root {
+    --main-font: 'Work Sans', sans-serif;
+    --body-font: 'Source Code Pro', sans-serif;
+    
+    --light-grey: #f2f2f2;
+    --med-grey: #555555;
+    --dark-grey: #333333;
+    --blue: #95C6E7;
+    --light-red:#F96780;
+    --red: #C70039;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--red);
+    color: white;
+    font-family: var(--body-font);
+}
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+

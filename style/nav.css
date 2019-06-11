@@ -1,0 +1,28 @@
+#nav {
+    width: 100vw;
+    font-family: var(--main-font);
+    font-size: 3vh;
+    margin: 1.2em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav ul {
+    padding: 0;
+    margin: 0 auto;
+}
+#nav li {
+    padding: 0;
+    margin: 0 1.2em;
+    display: inline-block;
+}
+#nav li a {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom: none;
+}
+#nav li a:hover {
+    color: var(--blue);
+}
+
