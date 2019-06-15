@@ -1,14 +1,14 @@
 #titlewrap {
     background-color: var(--light-grey);
     font-family: var(--main-font);
-    width: 100%;
+    width: 100vw;
     height: max-content;
     margin-top: 0 -9999rem;
     background-repeat: repeat-x;
 }
 #titlewrap #titlebar {
-    max-width: 60em;
-    min-width: 26em;
+    max-width: 74em;
+    min-width: 20em;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
 #titlewrap #titlebar #title {
     width: max-content;
     height: max-content;
-    color: var(--dark-grey);
+    color: var(--med-grey);
     font-family: var(--title-font);
     font-weight: 400;
     font-size: 1.5em;
@@ -50,13 +50,3 @@
 #titlewrap #titlebar #icons li a:hover {
     color: var(--light-red);
 }
-
-@media only screen and  (max-width: 20em) {
-    #titlewrap #titlebar {
-        min-width: 18em;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
