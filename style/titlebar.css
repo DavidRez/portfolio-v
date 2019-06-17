@@ -50,3 +50,12 @@
 #titlewrap #titlebar #icons li a:hover {
     color: var(--light-red);
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #titlewrap #titlebar {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
