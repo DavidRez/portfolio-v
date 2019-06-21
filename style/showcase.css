@@ -22,6 +22,7 @@
     margin-top: 3em;
 }
 .info_block .links a{
+    font-family: var(--secondary-font);
     color: var(--blue);
     text-decoration: none;
 }
@@ -44,6 +45,7 @@
     margin: 1.2em auto;
 }
 .info_block .title_piece {
+    font-family: var(--secondary-font);
     font-weight: 600;
     margin-bottom: .3em;
     font-size: 1.5em;
@@ -54,7 +56,7 @@
     font-size: .9em;
 }
 .info_block .description {
-    font-family: var(--main-font);
+    font-family: var(--primary-font);
     font-size: .9em;
     font-weight: 300;
     line-height: 1.6em;

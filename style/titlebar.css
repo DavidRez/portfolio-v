@@ -1,6 +1,6 @@
 #titlewrap {
     background-color: var(--light-grey);
-    font-family: var(--main-font);
+    font-family: var(--primary-font);
     width: 100vw;
     height: max-content;
     margin-top: 0 -9999rem;
