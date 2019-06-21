@@ -10,16 +10,16 @@
 .box {
     position: relative;
     margin: 1.1em;
-    font-family: var(--body-font);
     word-wrap: normal;
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    visibility: hidden;
 }
 .box:nth-child(N) > img {
-    animation-delay: .75s;
+    animation-delay: 2s;
   }
 .box img {
     width: 22em;
@@ -27,6 +27,7 @@
     object-fit: cover;
 }
 .box .worktitle {
+    font-family: var(--secondary-font);
     font-size: 1em;
     font-weight: 600;
     margin-top: .2em;
