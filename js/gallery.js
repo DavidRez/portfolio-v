@@ -1,9 +1,15 @@
+const container = document.getElementById('container');
+const work = document.createElement('div');
+work.setAttribute('class','work');
+
 //create and update gallery
 function showGallery() {
-  const container = document.getElementById('container');
-  const work = document.createElement('div');
-  work.setAttribute('class','work');
-  container.append(work)
+  //total images for current category
+  gallery.forEach(galPiece => { 
+    if (currentCategory === 'all' || galPiece.datatype === currentCategory) {
+      totalImages++;
+    }
+  });
 
   //setting gallery up
   gallery.forEach(piece => {
@@ -16,8 +22,11 @@ function showGallery() {
       box.setAttribute('data-type', piece.datatype);
 
       //add image
-      const img = document.createElement('img');
+      const img = new Image();
       img.src = piece.mainImage;
+      img.addEventListener('load',() => {
+        loadedCount++
+      });
       img.setAttribute('alt', piece.title);
       box.append(img);
 
@@ -104,5 +113,7 @@ function showGallery() {
 }
 
 showGallery();
+
+checkImages();
 
 
