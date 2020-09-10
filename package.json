@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-v",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./client/src/index.jsx",
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-lazyload": "^2.6.9",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidRez/portfolio-v.git"
+  },
+  "author": "David Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidRez/portfolio-v/issues"
+  },
+  "homepage": "https://github.com/DavidRez/portfolio-v#readme"
+}
