@@ -1,0 +1,147 @@
+.work-container {
+  max-width: 74em;
+  min-width: 20em;
+  width: 100%;
+  margin: 1em auto 0 auto;
+  padding: 0 1em;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+.work {
+  position: relative;
+  word-wrap: normal;
+  opacity: 0;
+  width: 100%;
+  height: calc(.82 * 100%);
+}
+.loadbox {
+  overflow: hidden;
+  position: relative;
+  padding-top: calc(.82 * 100%);
+  background: rgba(0, 0, 0, .05)
+}
+.loadbox > .m-spinner--signal {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.imageBox {
+  overflow: hidden;
+  position: relative;
+  padding-top: calc(.82 * 100%);
+}
+.imageBox > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.imageBox:hover img {
+  filter: grayscale(20%);
+}
+.imageBox > a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.imageBox .overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: black;
+}
+.imageBox:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.work .worktitle {
+  font-family: var(--title-font);
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0.2em 0 0.07em 0;
+}
+.work .type {
+  font-family: var(--body-font);
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .work-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .work .worktitle {
+    width: 45vw;
+    font-size: 1.1em;
+  }
+  .work .type {
+    width: 45vw;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .work-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .work {
+    margin: 0 auto;
+  }
+  .work .worktitle {
+    width: 45vw;
+    font-size: 1em;
+  }
+  .work .type {
+    width: 45vw;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .work-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+  .work {
+    margin: 0 auto;
+  }
+  .work .worktitle {
+    width: 90vw;
+    font-size: 1.2em;
+  }
+  .work .type {
+    width: 90vw;
+    font-size: 1em;
+  }
+}

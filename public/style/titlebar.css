@@ -1,0 +1,75 @@
+#titlewrap {
+    background-color: var(--dark-primary);
+    width: 100vw;
+    height: max-content;
+    margin-top: 0 -9999rem;
+    background-repeat: repeat-x;
+}
+#titlewrap #titlebar {
+    max-width: 74em;
+    min-width: 20em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#titlewrap #titlebar #logo .owl {
+    height: 2.5em;
+    margin: 1em 1.25em;
+    fill: var(--med-secondary);
+    transition: all ease 1s;
+    cursor: pointer;
+}
+#titlewrap #titlebar #logo .owl:hover {
+    fill: var(--light-secondary);
+}
+#titlewrap #titlebar #title {
+    width: max-content;
+    height: max-content;
+    color: var(--light-grey-2);
+    font-family: var(--header-font);
+    font-weight: 600;
+    font-size: 1.9em;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#titlewrap #titlebar #icons {
+    width: max-content;
+    height: max-content;
+    margin: 0 1em;
+}
+#titlewrap #titlebar #icons i {
+    font-size: 1.2em;
+    margin: .3em;
+}
+#titlewrap #titlebar #icons ul {
+    padding: 0;
+}
+#titlewrap #titlebar #icons li{
+    padding: 0;
+    display: inline-block;
+}
+#titlewrap #titlebar #icons li a {
+    color: var(--med-secondary);
+    border: none;
+    text-decoration: none;
+    transition: all ease 1s;
+}
+#titlewrap #titlebar #icons li a:hover {
+    color: var(--light-secondary);
+}
+
+@media only screen and (max-width: 480px) {
+    #titlewrap #titlebar {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
